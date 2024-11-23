@@ -17,7 +17,9 @@ app.use('/api/products/',BicycleRoute);
 app.use('/api/order',orderRoute)
 
 app.get('/', (req:Request, res:Response) => {
-  res.send('Hello World!')
+  res.status(200).json({
+    message:'Server is running successfully'
+  });
 })
 
 app.use('*',(req,res,next)=>{
