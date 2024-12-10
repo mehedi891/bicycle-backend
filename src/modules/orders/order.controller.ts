@@ -49,7 +49,7 @@ const getRevenueDb = async(req:Request,res:Response)=>{
     try {
         const result = await orderServices.getRevenueDb();
         res.status(200).json({
-            success: true,
+            success: true, 
             message: 'Successfully retrieve revenue',
             data: result
         });
