@@ -14,7 +14,7 @@ app.use(cors());
 
 //Application routes
 app.use('/api/products/',BicycleRoute);
-app.use('/api/orders',orderRoute)
+app.use('/api/orders/',orderRoute)
 
 app.get('/', (req:Request, res:Response) => {
   res.status(200).json({
